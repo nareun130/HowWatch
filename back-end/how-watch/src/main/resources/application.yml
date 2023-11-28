@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/how_watch
+    username: manager130
+    password: Tjdgh@130
+server:
+  port: 5000
