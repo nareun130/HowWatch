@@ -1,7 +1,17 @@
 spring:
   datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/how_watch
     username: manager130
     password: Tjdgh@130
 server:
   port: 5000
+         
+mybatis:
+  type-aliases-package: com.nareun.howwatch
+  mapper-locations: mybatis/**/*.xml
+
+jwt:
+  secret: nareun130
+  accessTokenExpirationTime: 3600000
+  refreshTokenExpirationTime: 8640000
